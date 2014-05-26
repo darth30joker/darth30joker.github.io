@@ -1,0 +1,21 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            泥泞的沼泽
+tagline:          '一个程序员的博客'
+description:      '擅长Python, 主玩Linux/Mac, 涉猎范围比较广....'
+url:              http://davidx.me
+
+author:
+  name:           'David Xie'
+  url:            https://twitter.com/davidx_me
+
+paginate:         5
+
+github:
+  repo:           https://github.com/kingheaven
