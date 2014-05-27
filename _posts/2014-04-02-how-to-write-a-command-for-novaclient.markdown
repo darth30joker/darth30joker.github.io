@@ -1,15 +1,23 @@
-很多时候, 大家可能觉得Nova提供的API不能满足自己的需求, 那么就需要自己写一套API出来. 写出来API后, 如果希望能更方便的使用的话, 那么还需要写一套CLI出来调用刚刚写的API, 这样, 一个完整的命令就创建出来了.
+---
+title: 如何给Nova写API和CLI
+---
 
-所以我们首先要从创建API开始.
+Nova提供了很好的扩展性让你可以轻松的写一套API和command出来. 一个nova的command由两部组成: 1.  API; 2. CLI. API和CLI并无绑定的关系, 也就是说, 一个CLI可以调用多个API, 一个API也可以被多个CLI调用.
 
-Nova的API, 默认都在nova.api.openstack.compute.contrib里, 所以你写的API, 一定要安装到这个路径下才可以. 一个完整的API, 需要以下几个要素:
+## API
 
-1. controller
-2. extension
+API是REST风格的, 输入/输出都是JSON格式的数据. API由两部分组成:
 
-Controller是一个普通的object就可以了, extension必须继承extensions.ExtensionDescriptor, 并且重写get_resources方法. 这里给出一个最简单的例子来:
+1. Controller
 
-    :::python
+    其实就是一个controller对象, 而controller不需要继承任何class, 继承object就可以了. controller内部, 任何共有的方法, 都可以被调用. 如果你的API有CRUD这几个方法的话, 那么就需要实现`index`, `show`, `update`, `delete`这几个方法了. 每个需要返回JSON的方法, 都需要加上`wsgi.serializers`这样的装饰器讲结果包装成XML.
+
+2. Extension
+
+
+
+给出一个API的例子:
+
     from webob import exc
 
     from oslo import messaging
@@ -150,3 +158,8 @@ Controller是一个普通的object就可以了, extension必须继承extensions.
             resources.append(res)
 
             return resources
+
+
+
+Controller是一个普通的object就可以了, extension必须继承extensions.ExtensionDescriptor, 并且重写get_resources方法. 这里给出一个最简单的例子来:
+
