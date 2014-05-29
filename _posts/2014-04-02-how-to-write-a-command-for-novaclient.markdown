@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 如何给Nova写API和CLI
 ---
 

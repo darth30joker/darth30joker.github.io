@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 如何在OS X里装postgresql和Ruby下的Gem
 ---
 
