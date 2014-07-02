@@ -13,9 +13,11 @@ url:              http://davidx.me
 
 author:
   name:           'David Xie'
-  url:            https://twitter.com/davidx_me
+  linkedin:       https://twitter.com/davidx_me
+  github:         https://github.com/kingheaven
+  aboutme:        http://about.me/davidx
+  linkedin:       https://www.linkedin.com/profile/view?id=57886859
 
 paginate:         5
 
-github:
-  repo:           https://github.com/kingheaven
+github:           https://github.com/kingheaven

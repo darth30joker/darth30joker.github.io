@@ -1,17 +1,19 @@
 ---
 layout: page
-title: About
+title: about myself
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+* 6年的开发经验
+* 做过PHP, Python和Java
+* 2年半的Web开发经验
+* 3年半的系统开发经验, 主要是集群管理/集群部署/云计算平台管理(OpenStack)
+* 熟悉RHEL, CentOS, Fedora, Debian, Ubuntu, ArchLinux, Gentoo等多种Linux发行版
+* [GDG西安](http://gdgxian.org/)的组织者
+* 西安Python社区的组织者
+* Fedora官方社区的packager, 维护着10多个rpm包
 
-我是一个典型的Geek, 喜欢研究感兴趣的事物. 做了6年的开发, 主要是Python语言, 期间还做过php/java等语言, 会Web开发和OpenStack开发. 操作系统基本都是玩Linux/Mac, 基本不碰Windows.
+参与过的开源项目:
 
-参与的开源项目:
-
-1. OpenStack - 帮助修bug
-2. Packstack - 帮助测试和修bug
-3. Fedora - 社区的packager, 负责几个java方面的RPM包
-
+1. OpenStack - bug修复
+2. Packstack - 测试和bug修复
+3. Fedora - 社区的packager, 负责几个java方面的RPM包和一些mate相关的包
