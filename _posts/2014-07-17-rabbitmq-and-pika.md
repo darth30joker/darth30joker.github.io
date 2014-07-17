@@ -3,19 +3,19 @@ layout: post
 title: Rabbitmq and Pika
 ---
 ## Install rabbitmq
-It's really easy to install rabbitmq on any linux distro.
+It's really easy to install rabbitmq on any linux distro. If you are using CentOS or RHEL, please install `epel` first.
 
-* CentOS
-    You need to enable epel first, and then, run `yum install -y rabbitmq-server`
+* CentOS, RHEL, Fedora
 
-* Fedora
-    You don't need to install epel to install rabbitmq, just run `yum install -y rabbitmq-server`
+    `yum install -y rabbitmq-server`
+
+* For other linux distors, please visit: [http://www.rabbitmq.com/download.html](http://www.rabbitmq.com/download.html)
 
 ## Run rabbitmq
 After installing rabbitmq, you need to start rabbitmq service, which is also easy. Just type `service rabbitmq-server start`
 
-## Use pika to send message
-When you have a rabbitmq environment, you can use `pika` to send and receive messages.
+## Install pika
+Since pika is a python package, so you can easily install it by `pip install pika`
 
 ### Send messages to rabbitmq using exchange
 Create `send.py` with below code:
@@ -71,5 +71,9 @@ channel.basic_consume(callback, queue=queue_name, no_ack=True)
 
 channel.start_consuming()
 {% endhighlight %}
+
 ### Run scripts
 First, run `send.py` and then run `receive.py`. You can see results from console, to stop it, press `ctrl-c`
+
+### References
+* [http://www.01happy.com/python-pika-rabbitmq-summary/](http://www.01happy.com/python-pika-rabbitmq-summary/)
