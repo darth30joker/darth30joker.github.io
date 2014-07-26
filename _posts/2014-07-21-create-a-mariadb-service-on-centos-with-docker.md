@@ -1,20 +1,21 @@
 ---
-title: Create a mariadb service on CentOS with Docker
+title: Create a MariaDB service on CentOS with Docker
 layout: post
+tags: Docker, MariaDB
 ---
 
-Learning Docker for a long time, this is my first time to create a service with it. In Docker's concept, each service should be in a container, and your application may comes with many containers.
+Learning Docker for a long time, this is my first time to create a service with it. In Docker's concept, each service should have a container, and your application may comes with many containers.
 
-This time, I am gonna create a mariadb service.
+This time, I am gonna create a MariaDB service.
 
-1. First of all, we need a `Dockerfile` to create our container:
+1. First of all, let's create a file named `Dockerfile`. `Dockerfile` is used to build an image:
 
         FROM centos:latest
         MAINTAINER David Xie "david.scriptfan@gmail.com"
 
         EXPOSE 3306
 
-2. With this file, we can get a clean CentOS. Let's try to install mariadb. After surfing from internet, we know that if we want to install the latest version of mariadb, we need to use its own repo. This is easy, just create a repo file and use it during installing mariadb. Our `Dockerfile` will look like this:
+2. With this file, we can get a clean CentOS image, but we don't have MariaDB installed. MariaDB in CentOS's repo is not the latest, we can install it from MariaDB's official repo. This is easy, just create a repo file and put it `/etc/yum.repos.d/`. Our `Dockerfile` will look like this:
 
         FROM centos:latest
         MAINTAINER David Xie "david.scriptfan@gmail.com"
@@ -34,9 +35,9 @@ This time, I am gonna create a mariadb service.
         gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
         gpgcheck=1
 
-3. Now we have a CentOS with mariadb installed, but how can I connect to it, and how to set password for `root`? Let's add more files for it.
+3. Now we have MariaDB installed, but how can I connect to it, and how to set password for `root`? Let's add more files for it.
 
-    `server.cnf` is used to make sure we are not blocked by mariadb:
+    `server.cnf` is used to make sure we are not blocked by MariaDB:
 
         [mysqld]
         bind-address=0.0.0.0
@@ -55,7 +56,7 @@ This time, I am gonna create a mariadb service.
         UPDATE user SET password=PASSWORD("root") WHERE user='root';
         FLUSH PRIVILEGES;
 
-    `mariadb.sh` is used to apply all updates and start mariadb service for us:
+    `mariadb.sh` is used to apply all updates and start MariaDB service for us:
 
         #!/bin/sh
         chown -R mysql:mysql /var/lib/mysql
