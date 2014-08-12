@@ -25,3 +25,7 @@ Here's the steps of building ISO:
 There you go!
 
 **NOTICE: If you want to know the details of building an ISO, please refer to this: [How to build boot2docker.iso locally](https://github.com/boot2docker/boot2docker/blob/master/doc/BUILD.md)**
+
+### References
+
+* Medium: [boot2docker together with VirtualBox Guest Additions](https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c)
