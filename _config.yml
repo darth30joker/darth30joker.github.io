@@ -6,9 +6,9 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            泥泞的沼泽
-tagline:          '一个程序员的博客'
-description:      '擅长Python, 主玩Linux/Mac, 涉猎范围比较广....'
+title:            Murky Swamp
+tagline:          'coding life!'
+description:      'aim at full-stack developer...'
 url:              http://davidx.me
 
 author:
