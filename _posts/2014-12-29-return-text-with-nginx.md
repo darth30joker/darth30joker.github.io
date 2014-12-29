@@ -2,7 +2,7 @@
 layout: post
 title: Return text with Nginx
 ---
-There is always a time that you want your web server just return some plain text to user or monitor services. One way of doing it, is that create a static file and use url of this file.
+There is always a time that you want your web server just return some plain text to user or monitor services. One way of doing it is to create a static file and use url of this file.
 
 Is there a better way for this?
 
