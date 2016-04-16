@@ -8,7 +8,7 @@ I will use `db-helper` command from [killbill](http://killbill.io) to show you h
 
 **The first thing you should know is `getopt` is not internal command for bash, if you want to use it, you have to make sure it is installed, and `gnu-getopt` is more powerful than `bsd-getopt`, which means, if you are using Mac OS X, you need to replace it with `gnu-getopt`.**
 
-{% highlight bash %}
+{% highlight bash linenos %}
 ARGS=`getopt -o "a:d:h:u:p:t:f:" -l "action:,driver:,database:,host:,user:,password:,test:,file:,port:,help" -n "db-helper" -- "$@"`
 eval set -- "${ARGS}"
 while true; do
