@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kill containers in Docker
+tags: docker
 ---
 After using Docker for a while, you may find out there are so many containers in stopped status, and they are not deleted. You can delete them one by one with `docker rm`, but we are developers, how can we bear this?
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to configuration Nginx with bottle.py and uwsgi
+tags: Nginx,Python,uwsgi,bottlepy
 ---
 **Before you start, you should know how to install nginx and uwsgi, and have them already installed.**
 
