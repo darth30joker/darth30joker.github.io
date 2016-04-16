@@ -87,6 +87,42 @@ text:
     coming_soon: 'Coming soon...'
   og_locale: 'en_US'
 
+collections:
+  slides:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: slide
+      reveal:
+        controls: true
+        progress: true
+        slideNumber: false
+        history: false
+        keyboard: true
+        overview: true
+        center: true
+        touch: true
+        loop: false
+        rtl: false
+        fragments: true
+        embedded: false
+        autoSlide: 0
+        autoSlideStoppable: true
+        mouseWheel: false
+        hideAddressBar: true
+        previewLinks: false
+        transition: default
+        transitionSpeed: default
+        backgroundTransition: default
+        viewDistance: 3
+        parallaxBackgroundImage:
+        parallaxBackgroundSize:
+        theme: slide
+
 # Build settings
 markdown:     kramdown
 redcarpet:
