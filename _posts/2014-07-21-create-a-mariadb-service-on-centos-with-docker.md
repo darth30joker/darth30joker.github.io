@@ -1,7 +1,7 @@
 ---
 title: Create a MariaDB service on CentOS with Docker
 layout: post
-tags: Docker, MariaDB
+tags: docker, MariaDB
 ---
 
 Learning Docker for a long time, this is my first time to create a service with it. In Docker's concept, each service should have a container, and your application may comes with many containers.

@@ -1,23 +1,102 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# Site settings
+title: Murky Swamp
+email: david.xie@me.com
+author: David Xie
+description: "aim at full-stack developer..."
+baseurl:     ""
+url:         "http://davidx.me"
+date_format: "%b %-d, %Y"
 
-# Permalinks
-permalink:        pretty
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics:
+google_tag_manager:
+# Bing services
+bing_verification:
 
-# Setup
-title:            Murky Swamp
-tagline:          'coding life!'
-description:      'aim at full-stack developer...'
-url:              http://davidx.me
+# Optional features
+animated: true
+show_related_posts: true
+show_post_footers: false
+show_social_icons: true
+ajaxify_contact_form: false
+enable_mathjax: false
+extended_fonts: false
+enable_anchorjs: true
 
-author:
-  name:           'David Xie'
-  linkedin:       https://twitter.com/davidx_me
-  github:         https://github.com/david-xie
-  aboutme:        http://about.me/davidx
-  linkedin:       https://www.linkedin.com/profile/view?id=57886859
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: kingheaven
 
-paginate:         5
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+facebook_comments:
+facebook_appid:
+facebook_comments_number: 10
 
-github:           https://github.com/david-xie
+# Social icons
+github_username: david-xie
+bitbucket_username:
+stackoverflow_id: david-xie
+twitter_username:
+skype_username:
+steam_nickname:
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: false
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: true
+share_stumbleupon: false
+share_hackernews: false
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share this post!'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+  og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     10
+sass:
+  compressed: true
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude: [vendor]

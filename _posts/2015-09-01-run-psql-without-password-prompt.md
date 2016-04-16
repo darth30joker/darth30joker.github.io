@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Run psql without password
+tags: postgresql
 ---
 To run `psql` without prompting password, you need to create `$HOME/.pgpass` file like below with correct file permission `600`:
 

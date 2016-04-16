@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rabbitmq and Pika
+tags: rabbitmq, pika
 ---
 ## Install rabbitmq
 It's really easy to install rabbitmq on any linux distro.

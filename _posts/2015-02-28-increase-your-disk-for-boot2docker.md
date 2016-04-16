@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Increase your disk size for boot2docker
+tags: docker
 ---
 
 You searched for this article, so I assume you know what boot2docker is and are using it. That's good, so am I.

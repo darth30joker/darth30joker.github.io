@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 使用docker
+tags: docker
 ---
 
 ## 什么是docker?
