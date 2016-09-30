@@ -1,10 +1,10 @@
 # Site settings
 title: Murky Swamp
-email: david.xie@me.com
+email: david30xie@gmail.com
 author: David Xie
 description: "aim at full-stack developer..."
 baseurl:     ""
-url:         "http://davidx.me"
+url:         "http://iamdavidxie.com"
 date_format: "%b %-d, %Y"
 
 # Google services
